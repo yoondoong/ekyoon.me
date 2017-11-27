@@ -1,0 +1,34 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.page {
+  position: fixed;
+  left: 130px;
+  top: 30px;
+}
+
+#bg {
+  width: 80vw;
+}
+
+img.main {
+  width: 7vw;
+  position: absolute;
+  left: 14vw;
+  bottom:5vh;
+}
+
+img.hover {
+  display: none;
+}
+.wrapper:hover img.main {
+  display: none;
+}
+.wrapper:hover img.hover {
+  display: block;
+  width: 7.3vw;
+  position: absolute;
+  left: 14vw;
+  bottom:5vh;
+}
