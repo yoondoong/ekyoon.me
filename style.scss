@@ -22,9 +22,11 @@ img.main {
 img.hover {
   display: none;
 }
+
 .wrapper:hover img.main {
   display: none;
 }
+
 .wrapper:hover img.hover {
   display: block;
   width: 7.3vw;
