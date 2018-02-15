@@ -1,36 +1,64 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Nanum Pen Script', cursive;
 }
 
-.page {
-  position: fixed;
-  left: 130px;
-  top: 30px;
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
 }
 
-#bg {
-  width: 80vw;
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-img.main {
-  width: 7vw;
-  position: absolute;
-  left: 14vw;
-  bottom:5vh;
+.row img {
+  height: 10vw;
 }
 
-img.hover {
-  display: none;
+.row #des, #cod, #ab {
+  font-size: 34px;
+  visibility: hidden;
 }
 
-.wrapper:hover img.main {
-  display: none;
+.row #code img{
+  height: 12.5vw;
+  margin-left: 5px;
 }
 
-.wrapper:hover img.hover {
-  display: block;
-  width: 7.3vw;
-  position: absolute;
-  left: 14vw;
-  bottom:5vh;
+.row #cod {
+  margin-top: -18px;
+}
+
+#design:hover {
+  cursor: pointer;
+}
+
+#about:hover {
+  cursor: pointer;
+}
+
+#code:hover {
+  cursor: pointer;
+}
+
+#design:hover + #des {
+  visibility: visible;
+}
+
+#about:hover + #ab {
+  visibility: visible;
+}
+
+#code:hover + #cod {
+  visibility: visible;
+}
+
+#des, #ab {
+  margin-right: 15px;
+  margin-top: -12px;
 }
