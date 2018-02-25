@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>about</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/round-about.css" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+  </head>
+
+  <style>
+  body{
+    padding-top: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+
+  nav #design img{
+    height: 50px;
+  }
+
+  nav #code img{
+    height: 65px;
+  }
+
+  nav a {
+    font-size: 40px;
+    color: black;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-right {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-right .row {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    align-items: center;
+  }
+
+  #des, #cod{
+    visibility: hidden;
+    font-size: 20px;
+  }
+
+  #design:hover + #des {
+    visibility: visible;
+  }
+
+  #code:hover + #cod {
+    visibility: visible;
+  }
+
+  .heading #about{
+    width: 150px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 35px;
+    height: 20vh;
+  }
+
+  .heading a {
+    margin-bottom: 60px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+  }
+
+  footer img{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+
+  .about-container {
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-container {
+    display: flex;
+    flex-direction: column;
+    width: 38vw;
+    margin-right: 30px;
+  }
+
+  .left-container a {
+    text-decoration: underline;
+    color: #343a40;
+  }
+
+
+  .left-container .row{
+    flex-direction: row;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+
+  .left-container .row a{
+    font-weight: lighter;
+  }
+
+  .row h2 {
+    margin-right: 10px;
+  }
+
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    margin-bottom:0vh;
+  }
+
+  .right-container img {
+    width: 450px;
+  }
+
+  .right-container .row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 9vh;
+  }
+
+  .right-container .row a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #343a40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  </style>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-left">
+        <a  href="../index.html">EKYOON</a>
+      </div>
+      <div class="nav-right">
+      <div class="row">
+        <a  href="../design/design.html" id="design"><img src="../img/design.png" alt="design"/></a>
+        <a id="des">DESIGN</a>
+      </div>
+      <div class="row">
+        <a  href="../code/code.html" id="code"><img src="../img/code.png" alt="code"/></a>
+        <a id="cod">DEVELOP</a>
+      </div>
+    </div>
+    </nav>
+
+    <div class="heading">
+    <img src="../img/about.png" alt="about" id="about"/>
+    <a>Andy EK Yoon</a>
+  </div>
+
+    <!-- Page Content -->
+    <div class="about-container">
+        <div class="left-container">
+          <h4>My Background</h4>
+          <p>Born and raised in Seoul, South Korea, I am an international student at Dartmouth College in the United States.
+            I'm majoring in Computer Science Modified with Digital Arts. I do <b>UX/UI design</b> and <b>code</b> but last year I realized that I enjoy designing more :)
+          </p>
+          <h4>I Am...</h4>
+          <ul>
+            <li>A member of the Korea National Women's Lacrosse Team</li>
+            <li>An Escape Room enthusiast. I am in two of the top rankings in Seoul!</li>
+            <li>Went to 4 different elementary schools and 3 different middle schools. I moved around a lot.</li>
+            <li>Learned six different languages but I only know two of them (Korean and English) properly :P</li>
+          </ul>
+          <h4>I Love...</h4>
+          <ul>
+            <li><a href="http://dali.dartmouth.edu/">DALI Lab!</a> I work there as a designer, developer and project manager.
+              We have the coolest workspace in New Hampshire. <a href="http://news.dartmouth.edu/news/2018/02/redesigned-dali-lab-wins-architecture-award?utm_source=vox_daily&utm_medium=email&utm_campaign=vox_daily_2018_2_06">Come check it out!</a>
+            </li>
+            <li>Hypebeast/Vintage fashion. I collect hats, shoes and fun socks. My favorite brands are Vans, Dr.Martens and Chums.</li>
+            <li>Harry Potter is why and how I learned English. No joke. I grew up listening to Jim Dale's Harry Potter audiobooks and I know every line by heart.</li>
+          </ul>
+          <h4>I'm Excited About...</h4>
+          <ul>
+            <li>The VR project I am currently working on that simulates Tarsier's Vision. It is my first time as a Project Manager!</li>
+            <li>Going to Rome for 3 months for Art History Foreign Studies Program</li>
+          </ul>
+      </div>
+      <div class="right-container">
+        <img src="profile4.jpg" alt="profile">
+        <div class="row">
+          <a href="mailto:eun.kyung.yoon.19@dartmouth.edu"><i class="far fa-envelope fa-2x"></i>Email</a>
+          <a> <i class="far fa-file fa-2x"></i>Resume</a>
+          <a href="https://www.linkedin.com/in/andy-ek-yoon-290475155/"><i class="fab fa-linkedin fa-2x"></i>LinkedIn</a>
+          <a href="https://www.instagram.com/snooze.trio/"><i class="fab fa-instagram fa-2x"></i>Instagram</a>
+      </div>
+      </div>
+  </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer>
+      <a>Copyright &copy; ekyoon.me 2018</a>
+      <img src="../design/footer1.png" alt="footer1" id="footer1"/>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>

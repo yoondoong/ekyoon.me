@@ -1,0 +1,64 @@
+body {
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row img {
+  height: 10vw;
+}
+
+.row #des, #cod, #ab {
+  font-size: 34px;
+  visibility: hidden;
+}
+
+.row #code img{
+  height: 12.5vw;
+  margin-left: 5px;
+}
+
+.row #cod {
+  margin-top: -18px;
+}
+
+#design:hover {
+  cursor: pointer;
+}
+
+#about:hover {
+  cursor: pointer;
+}
+
+#code:hover {
+  cursor: pointer;
+}
+
+#design:hover + #des {
+  visibility: visible;
+}
+
+#about:hover + #ab {
+  visibility: visible;
+}
+
+#code:hover + #cod {
+  visibility: visible;
+}
+
+#des, #ab {
+  margin-right: 15px;
+  margin-top: -12px;
+}
