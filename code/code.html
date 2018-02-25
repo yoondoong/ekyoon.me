@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>2 Col Portfolio - Start Bootstrap Template</title>
+    <title>code portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,40 +18,122 @@
 
   </head>
 
-  <body>
+  <style>
+  body{
+    padding-top: 40px;
+  }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="../index.html">ekyoon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="../design/design.html">Design
-              </a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Develop</a>
-              <span class="sr-only">(current)</span>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about/about.html">About</a>
-            </li>
-          </ul>
-        </div>
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+
+  nav #design img{
+    height: 50px;
+  }
+
+  nav #about img{
+    height: 50px;
+  }
+
+  nav a {
+    font-size: 40px;
+    color: black;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-right {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-right .row {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    align-items: center;
+  }
+
+  #ab, #des{
+    visibility: hidden;
+    font-size: 20px;
+  }
+
+  #about:hover + #ab {
+    visibility: visible;
+  }
+
+  #design:hover + #des {
+    visibility: visible;
+  }
+
+  .container #code{
+    width: 150px;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 35px;
+  }
+
+  .heading a {
+    margin-bottom: 60px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+  }
+
+  footer img{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  </style>
+
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a  href="../index.html">EKYOON</a>
       </div>
+      <div class="nav-right">
+      <div class="row">
+        <a  href="../design/design.html" id="design"><img src="../img/design.png" alt="design"/></a>
+        <a id="des">DESIGN</a>
+      </div>
+      <div class="row">
+        <a  href="../about/about.html" id="about"><img src="../img/about.png" alt="about"/></a>
+        <a id="ab">ABOUT</a>
+      </div>
+    </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4">Web Dev, VR and Software</h1>
-
-      <div class="row">
+      <div class="heading">
+      <img src="../img/code.png" alt="code" id="code"/>
+      <a>Full-stack Web Dev, VR and Software</a>
+    </div>
+          <!-- <div class="row">
         <div class="col-lg-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
@@ -118,17 +200,15 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- /.row -->
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; ekyoon.me 2018</p>
-      </div>
-      <!-- /.container -->
+    <footer>
+      <a>Copyright &copy; ekyoon.me 2018</a>
+      <img src="../design/footer1.png" alt="footer1" id="footer1"/>
     </footer>
 
     <!-- Bootstrap core JavaScript -->
