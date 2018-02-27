@@ -18,39 +18,135 @@
 
   </head>
 
+  <style>
+  body{
+    padding-top: 40px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 13vh;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+
+  nav #about img{
+    height: 50px;
+  }
+
+  nav #code img{
+    height: 65px;
+  }
+
+  nav #design img{
+    height: 50px;
+  }
+
+  nav a {
+    font-size: 40px;
+    color: black;
+  }
+
+  nav a:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  .nav-right {
+    width: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nav-right .row {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    align-items: center;
+  }
+
+  #ab, #cod, #des{
+    visibility: hidden;
+    font-size: 20px;
+  }
+
+  #about:hover + #ab {
+    visibility: visible;
+  }
+
+  #code:hover + #cod {
+    visibility: visible;
+  }
+
+  #design:hover + #des {
+    visibility: visible;
+  }
+
+  .container #design{
+    width: 150px;
+  }
+
+  .heading {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+  }
+
+  .heading a {
+    margin-bottom: 50px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+  }
+
+  footer img{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    height: 50px;
+  }
+  </style>
+
   <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="../../../index.html">ekyoon</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../../design.html">Design
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../code/code.html">Develop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../about/about.html">About</a>
-            </li>
-          </ul>
-        </div>
+    <nav>
+      <div class="nav-left">
+        <a  href="../../../index.html">EKYOON</a>
       </div>
+      <div class="nav-right">
+      <div class="row">
+        <a  href="../../design.html" id="design"><img src="../../../img/design.png" alt="design"/></a>
+        <a id="des">DESIGN</a>
+      </div>
+      <div class="row">
+        <a  href="../../../about/about.html" id="about"><img src="../../../img/about.png" alt="about"/></a>
+        <a id="ab">ABOUT</a>
+      </div>
+      <div class="row">
+        <a  href="../../../code/code.html" id="code"><img src="../../../img/code.png" alt="code"/></a>
+        <a id="cod">DEVELOP</a>
+      </div>
+    </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
 
       <!-- Portfolio Item Heading -->
-      <h1 class="my-4">DOC Carbon Emissions
-      </h1>
+      <div class="heading">
+      <a>DOC Carbon Emissions Website</a>
+    </div>
 
       <!-- Portfolio Item Row -->
       <div class="row">
@@ -61,20 +157,24 @@
 
         <div class="col-md-4">
           <h3 class="my-3">Project Overview</h3>
+          <ul>
+            <li>2017 March - Present</li>
+            <li>Designer and Developer</li>
+            <li><a href="https://dali-lab.github.io/DOC-emissions/">DOC Website Link</a></li>
+          </ul>
           <p>Website that visualizes carbon emissions data of the Dartmouth Outing Club with illustrations and fun visuals. Decisions on style and flow are centered on the desire to create an accessible site that is clean, engaging, credible, motivating and inspiring.
-            Key features include: data visualization with parallax illustrations, carbon emissions calculator and about page. <b>The calculator page is still under construction</b>.</p>
+            Key features include data visualization with parallax illustrations, carbon emissions calculator and about page. <b>The calculator page is still under construction</b>.</p>
         </div>
       </div>
       <!-- /.row -->
 
       <div class="row">
         <div class="col-md-12">
-          <a>  d</a> </br>
-          <a> d </a>
           <h3 class="my-3">Problem and Solution</h3>
-          <p><b>The Dartmouth Outing Club runs recreational trips that produce carbon emissions and there is no accessible way to keep track of that.</b></br>
-            The DOC has set a goal to become carbon neutral by 2020. As part of this goal, they aim to reduce carbon emissions from the trips they run. They had a Squarespace website that introduced the DOC Environmental Stewardship Committee. However, it was not suitable for data management as well as up-to-date data visualization.
-            As the solution, we made a platform to visualize data on the past and present carbon footprint which changes synchronously whenever data is updated. It also enables trip leaders to calculate the carbon footprint of a potential trip.
+          <p>The Dartmouth Outing Club runs recreational trips that produce carbon emissions and there is no accessible way to keep track of that.</br>
+            The DOC has set a goal to become carbon neutral by 2020. As part of this goal, they aim to reduce carbon emissions from the trips they run. They had a Squarespace website that introduced the DOC Environmental Stewardship Committee.
+            However, the squarespace website will not update the data realtime and it is difficult for non-coding members of the DOC to continue updating the website manually. Also, looking for a way to portray their project in a more interesting way. Also, need a calculator functionality
+            that estimates the amount of carbon emissions so that trip leaders can use as a tool to decided on the trips.
           </p>
           <h3 class="my-3">Inspiration Research</h3>
           <ul>
@@ -106,8 +206,9 @@
             <li>Design: Sketch, InVision, Zeplin</li>
             <li>Developing: HTML/CSS, JavaScript, Jquery, Chart.js, Google Map API, Firebase, Google Scripts</li>
           </ul>
-          <h3 class="my-3">What I Learned</h3>
+          <h3 class="my-3">Lessons</h3>
           <ul>
+            <li>important to define the problem clearly beforehand</li>
             <li>design involves not only front-end but also back-end</li>
             <li>Priority number one does not necessarily always come first</li>
           </ul>
