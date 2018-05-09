@@ -10,106 +10,12 @@
 
     <title>design</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/2-col-portfolio.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
 
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
 
   </head>
-
-  <style>
-  body{
-    padding-top: 40px;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 13vh;
-    margin-left: 6vw;
-    margin-right: 6vw;
-    font-family: 'Nanum Pen Script', cursive;
-  }
-
-  nav #about img{
-    height: 50px;
-  }
-
-  nav #code img{
-    height: 65px;
-  }
-
-  nav a {
-    font-size: 40px;
-    color: black;
-  }
-
-  nav a:hover {
-    text-decoration: none;
-    color: black;
-  }
-
-  .nav-right {
-    width: 140px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .nav-right .row {
-    display: flex;
-    flex-direction: column;
-    font-size: 19px;
-    align-items: center;
-  }
-
-  #ab, #cod{
-    visibility: hidden;
-    font-size: 20px;
-  }
-
-  #about:hover + #ab {
-    visibility: visible;
-  }
-
-  #code:hover + #cod {
-    visibility: visible;
-  }
-
-  .container #design{
-    width: 150px;
-  }
-
-  .heading {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 35px;
-  }
-
-  .heading a {
-    margin-bottom: 60px;
-  }
-
-  footer {
-    display: flex;
-    justify-content: center;
-    height: 80px;
-    align-items: center;
-  }
-
-  footer img{
-    margin-left: 15px;
-    margin-bottom: 20px;
-    height: 50px;
-  }
-  </style>
 
   <body>
     <nav>
@@ -117,48 +23,71 @@
         <a  href="../index.html">EKYOON</a>
       </div>
       <div class="nav-right">
-      <div class="row">
-        <a  href="../about/about.html" id="about"><img src="../img/about.png" alt="about"/></a>
-        <a id="ab">ABOUT</a>
+        <div class="col">
+          <a  href="../about/about.html" id="about"><img src="../img/about.png" alt="about"/></a>
+          <a id="ab">ABOUT</a>
       </div>
-      <div class="row">
-        <a  href="../code/code.html" id="code"><img src="../img/code.png" alt="code"/></a>
-        <a id="cod">DEVELOP</a>
-      </div>
+        <div class="col">
+          <a  href="../code/code.html" id="code"><img src="../img/code.png" alt="code"/></a>
+          <a id="cod">DEVELOP</a>
+        </div>
     </div>
     </nav>
 
     <!-- Page Content -->
     <div class="container">
-
       <!-- Page Heading -->
       <div class="heading">
-      <img src="../img/design.png" alt="design" id="design"/>
-      <a>Web Design and Digital Arts</a>
-    </div>
+          <img src="../img/design.png" alt="design" id="design"/>
+          <a>Web Design and Digital Arts</a>
+      </div>
 
       <div class="row">
-        <div class="col-lg-6 portfolio-item">
-            <a href="./projects/tarsier/tarsier.html"><img class="card-img-top" src="./projects/tarsier/tarsier-banner.jpg" alt="doc"></a>
+        <div class="project">
+          <a href="./projects/tarsier/tarsier.html"><img src="./projects/tarsier/tarsier-banner.jpg" alt="tarsier"/></a>
+          <div class="overlay">
+            <a href="./projects/tarsier/tarsier.html"><div class="text">VR Exhibition</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-            <a href="./projects/doc-emissions/doc.html"><img class="card-img-top" src="./projects/doc-emissions/doc-banner.png" alt="doc"></a>
+        <div class="project">
+          <a href="./projects/doc-emissions/doc.html"><img src="./projects/doc-emissions/doc-banner.png" alt="doc"/></a>
+          <div class="overlay">
+            <a href="./projects/doc-emissions/doc.html"><div class="text">Parallax Web Application</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <a ><img class="card-img-top" src="./projects/mafia/mafia-banner.png" alt="mafia"></a>
+        <div class="project">
+          <a ><img src="./projects/mafia/mafia-banner.png" alt="mafia"></a>
+          <div class="overlay">
+            <a ><div class="text">Online Mafia Game</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <a><img class="card-img-top" src="./projects/bello/bello.png" alt="trio"></a>
+        <div class="project">
+          <a><img src="./projects/bello/bello.png" alt="trio"></a>
+          <div class="overlay">
+            <a><div class="text">Character Design</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <a><img class="card-img-top" src="./projects/room/room.png" alt="room"></a>
+
+        <div class="project">
+          <a><img src="./projects/room/room.png" alt="room"></a>
+          <div class="overlay">
+            <a><div class="text">Thinking in 3D</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <a><img class="card-img-top" src="./projects/protein/uxDesign.png" alt="protein"></a>
+        <div class="project">
+          <a><img src="./projects/protein/uxDesign.png" alt="protein"></a>
+          <div class="overlay">
+            <a><div class="text">UX/UI Prototyping</div></a>
+          </div>
         </div>
-        <div class="col-lg-6 portfolio-item">
-          <a><img class="card-img-top" src="./projects/lax/lax-banner.png" alt="lax"></a>
+
+        <div class="project">
+          <a><img src="./projects/lax/lax-banner.png" alt="lax"></a>
+          <div class="overlay">
+            <a><div class="text">Illustrations</div></a>
+          </div>
         </div>
+      </div>
       </div>
       <!-- /.row -->
     </div>

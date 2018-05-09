@@ -1,0 +1,163 @@
+body {
+  padding-top: 40px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 13vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+nav #about {
+  height: 50px;
+}
+
+nav #about img {
+  height: 100%;
+}
+
+nav #code {
+  height: 65px;
+}
+
+nav #code img {
+  height: 100%;
+}
+
+nav a {
+  font-size: 40px;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-right .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-left a {
+  text-decoration: none;
+}
+
+#ab, #cod{
+  visibility: hidden;
+  font-size: 20px;
+}
+
+#about:hover + #ab {
+  visibility: visible;
+}
+
+#code:hover + #cod {
+  visibility: visible;
+}
+
+#design{
+  width: 150px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 35px;
+}
+
+.heading a {
+  margin-bottom: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+}
+
+.project img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.project .overlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project:hover img {
+  opacity: 0.3;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.project .text {
+  font-family: "HelveticaNeue-Light";
+  background-color: #ffac3e;
+  color: white;
+  font-size: 17px;
+  padding: 16px 32px;
+  font-weight: 500;
+}
+
+.overlay a:link, a:visited {
+  text-decoration: none;
+}
+
+.row img {
+  width: 450px;
+  height: 290px;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+footer img{
+  margin-left: 15px;
+  margin-bottom: 20px;
+  height: 50px;
+}
