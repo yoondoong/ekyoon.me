@@ -1,0 +1,104 @@
+body{
+  padding-top: 40px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 13vh;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+nav #about img{
+  height: 50px;
+}
+
+nav #code img{
+  height: 65px;
+}
+
+nav a {
+  font-size: 40px;
+  color: black;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-right {
+  width: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-right .col {
+  display: flex;
+  flex-direction: column;
+  font-size: 19px;
+  align-items: center;
+}
+
+.nav-left a {
+  text-decoration: none;
+}
+
+#ab, #cod{
+  visibility: hidden;
+  font-size: 20px;
+}
+
+#about:hover + #ab {
+  visibility: visible;
+}
+
+#code:hover + #cod {
+  visibility: visible;
+}
+
+#design{
+  width: 150px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 35px;
+}
+
+.heading a {
+  margin-bottom: 60px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+footer img{
+  margin-left: 15px;
+  margin-bottom: 20px;
+  height: 50px;
+}
