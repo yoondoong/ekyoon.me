@@ -20,8 +20,11 @@
   </head>
 
   <style>
+
   body{
     padding-top: 40px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #343434;
   }
 
   nav {
@@ -87,21 +90,92 @@
     visibility: visible;
   }
 
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container #design{
     width: 150px;
   }
 
   .heading {
-    margin-top: 60px;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 45px;
+    font-size: 30px;
     font-weight: bold;
   }
 
-  .heading a {
-    margin-bottom: 50px;
+  .heading iframe {
+    height: 60vh;
+    margin-bottom: 5vh;
+  }
+
+  .overview {
+    display: flex;
+    flex-direction: row;
+    align-self: stretch;
+    text-align: center;
+    border-top: 1px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .col .topic {
+    margin-bottom: 15px;
+  }
+
+  .col a:not(.topic){
+    font-weight: bold;
+  }
+
+  .line {
+    width: 90vw;
+  }
+
+  .content {
+    width: 83vw;
+  }
+
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;
+    background-color: #CCCCCC;
+    height: 1px;
+  }
+
+  .intro {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    width: 80vw;
+  }
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+
+  .timeline a {
+    margin: 8px;
+  }
+
+  .key {
+    width: 75vw;
   }
 
   footer {
@@ -146,140 +220,231 @@
 
       <!-- Portfolio Item Heading -->
       <div class="heading">
-      <a>Tarsier Goggles</a>
-    </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cp2S0zRcMjs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <a>More Than An Animal Simulation—A New Perception of Space with VR</a>
+      </div>
 
-      <!-- Portfolio Item Row -->
-      <div class="row">
+      <div class="line"><hr/></div>
 
-        <div class="col-md-8">
-          <img class="img-fluid" src="https://media.giphy.com/media/69v7poUIKnTKZeo8um/giphy.gif" style="height: 500px;" alt="">
+      <div class="overview">
+        <div class="col">
+          <a class="topic">PROJECT</a>
+          <a>TARSIER GOGGLES</a>
         </div>
-
-        <div class="col-md-4">
-          <h3 class="my-3">Project Overview</h3>
-          <ul>
-            <li>2018 Jan - Present</li>
-            <li>Project Manager, Designer and Developer</li>
-          </ul>
-          <p>
-            Tarsiers are tennis ball-sized nocturnal primates with enormous eyes, both in absolute size and in proportion to the size of the animal. In fact, the relative eye size of tarsiers is unsurpassed by any vertebrate living or extinct. The Tarsier Goggles project aims to simulate such extraordinary optics through VR to provide an immersive experience for the audience to see how the way we view the world affect us and learn from an altered experience.
-            <b>The project is still in progress.</b>
-          </p>
+        <div class="col">
+          <a class="topic">FOCUS</a>
+          <a>AGILE MANAGEMENT / VR DESIGN & DEVELOPMENT / 3D MODELING</a>
+        </div>
+        <div class="col">
+          <a class="topic">TIME</a>
+          <a>JAN - MAR 2018</a>
         </div>
       </div>
+
+      <div class="line"><hr/></div>
+
       <!-- /.row -->
 
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="my-3">Problem and Solution</h3>
-          <p>
-            It is hard for humans to visualize/imagine the way animals view the world, as our way of perceiving the world is the only one we know. We can learn about optics, evolution through natural selection, and visual adaptations in the classroom setting, but we cannot yet appreciate how those adaptations function and affect the perceptual experience. What is it like to see as a tarsier, a primate with extremely specialized vision? How does the way we view the world affect us, and what can we learn from an altered experience?
-          </p>
-          <h3 class="my-3">Inspiration/Market Research</h3>
+      <div class="container">
+        <div class="intro">
+        <p>
+          It is hard for humans to visualize/imagine the way animals view the world, as the human perspective is so dominant in our lives. We may learn about optics, natural selection, and visual adaptations in class, but we cannot yet truely appreciate how such adaptations function and affect the perceptual experience. What is it like to see as a tarsier, a primate with extremely specialized vision? How does the way we view the world affect us, and what can we learn from an altered experience?
+        </p>
+        <p>
+          To address this problem, we created a Virtual Reality application, “Tarsier Goggles”, that provides an immersive experience of the world in the eyes of a tarsier.
+          We constructed an exhibition containing interactive stations. Each environment in the stations emphasizes the user's appreciation for image brightness, field of view, depth of field, and color blindness.
+          Finally, a culminating environment of a Bornean forest allows the users to synthesize their understanding of a new perception of space in a more realistic setting.
+        </p>
+        <p>
+          For this project, I worked as a multi-player. I oversaw to the entire project's progress as the <b>Project Manager</b>, leading the workflow with Agile Development Methodologies and facilitating communication among designers, developers and project partners.
+          Also, contributing to the project as a <b>Designer and Developer</b>, I was able to integrate Technology with Digital Arts by conducting User Research, modeling in 3D, scripting in C# and learning to develop a game in Unity3D.
+          In this page, I would like to focus mainly on the design process of the project. For more information on the development process, please click <a href="../../../code/projects/tarsier.html">here</a>.
+        </p>
+      </div>
+
+        <div class="line"><hr/></div>
+
+        <div class="timeline">
+          <a>TIMELINE</a>
+          <a>Week 1-2 - Research</a>
+          <a>Week 3-4 - Brainstorming</a>
+          <a>Week 4-5 - Testing</a>
+          <a>Week 6-9 - Building</a>
+          <a>Week 10 - Exhibition of the Exhibition</a>
+          <a>Lessons Learned</a>
+          <a>Future</a>
+        </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Research</h3>
           <ul>
-            <li>
-            <a href="http://iteota.com/"><p>In the Eyes of the Animal (ITEOTA)</p></a>
-            <p>A project based in the UK that simulates the vision of animals such as mosquitoes, dragonflies, owls, and frogs artistically using VR and AR. ITEOTA is more focused on seeing natural habitat in the animals’ views and does not engage the user with exploring how specific visual components have evolved or how they differ from and influence the human experience. In addition, their solution is less accessible to the public as it involved an exhibition within the woods. Also, as tarsiers are animals with significant differences in optics due to visual adaptations, it will be meaningful to portray those specific adaptations, such as a wider field of view. </p>
-            <img class="img-fluid" src="iteota.png" style="height: 36vh;"alt="inspo1">
-            <img class="img-fluid" src="iteota3.png" style="height: 36vh;"alt="inspo2">
-          </li>
-        </br>
-            <li>
-            <a href="http://www.alleyesonparis.com/index_en.html"><p>All Eyes on Paris</p></a>
+            <li><b>Defining the Problem</b></li>
             <p>
-              A 3D experience that allows users to see Paris in the eyes of animals such as dogs, cats, rats, and hawks. It incorporates how the field of vision and the eyes' position relative to the head affects the way space is shaped. It is not a Virtual Reality application, but a 3D game in the perspective of an animal. As it involves a lot of action, it causes discomfort and motion sickness. However, it includes interactive elements.
+              The problem itself was hard to pinpoint exactly as we hoped to provide a deeper meaning than “Tarsiers are endangered” or “Tarsiers have different visual adaptations.”
+              To achieve this, the members reframed the question over and over. First, into a single sentence. Then, into an opportunity. Then, into a narrower scope version. Then, into a larger scope.
             </p>
-            <img class="img-fluid" src="paris.png" style="height: 36vh;"alt="inspo1">
-            <img class="img-fluid" src="paris2.png" style="height: 36vh;"alt="inspo2">
-          </li>
-        </br>
-          <li>
-            <a href="https://projects.invisionapp.com/boards/9C3H89LTD3SZM/"><p>More on InVision</p></a>
-          </li>
-          <li>
-            <a> User Personas: <a href="http://app.userforge.com/personas/Qg3P8DpbKiNQh4o86">Eliza Nelson (the museum lover)</a>, <a href="http://app.userforge.com/personas/nfwpEqC3jDZxSpnw4">Becky Barrett (the high school student)</a>, <a href="http://app.userforge.com/personas/ihxLJxTitteJYLQEW">Ahmet Eksioglu (the high school teacher)</a>
-          </li>
-        </ul>
-          <h3 class="my-3">Features and Adjectives</h3>
-          <ul>
-            <li><b>Tarsier Vision Mode</b> that shows red-green blindness, a different depth of field, a wider field of view, and its brightness compensation. Tarsier Vision Mode is toggleable.</li>
-            <li><b>General Room</b> that represents an abstract human environment (an exhibition). The room is to hold portals to the mini stations.</li>
-            <li><b>Forest Environment</b> that represents a natural environment. It will include a feature where the user can leap from tree to tree like a Tarsier.</li>
-            <li><b>Mini Stations</b> are separate environments that emphasizes each aspect of the Tarsier Vision Mode. For instance, the brightness compensation station is a dark room that can only be navigated in the Tarsier's brighter vision.</li>
-            <li>Adjectives: wonder, inspiring, interesting, visually stimulating</li>
-            <li>For more details visit, <a href="https://docs.google.com/document/d/1bRXLDb169pWu8J8mmuttsPr3Oe6Lvtj213uKmaPzxo4/edit#">Feature Specs Google Doc</a></li>
-          </ul>
-          <h3 class="my-3">Paper Sketches and User Testing</h3>
-          <ul>
-            <li>Concept sketch based on brainstormed idea </br>
-              <img src="concept.jpg" style="width: 50vw;"/>
-              <img src="sketch2.jpg" style="width: 30vw;"/>
-              <img src="sketch1.jpg" style="width: 30vw;"/>
-            </li>
-            <li><a href="UserTest.pdf">User flow paper sketch</a></li>
-            <li>Struggles: first time designing for VR. not sure how to create a mockup and user flow diagram. decided to use storyboards and show each key scenes of the VR experience</li>
-            <li>was still difficult to conduct user testing</li>
-            <li>some bias because we had to explain some context behind the design</li>
-            <li>tested on 5 different users</li>
-            <li>feedback: confusing to show tarsier vision toggles with eyeballs, the explanations on screen can be somewhat distracting and hard to read</li>
-            <li>overall structure of the user flow, having general room and mini stations were intuitive</li>
-          </ul>
-          <h3 class="my-3">High Resolution Mockups...?</h3>
-          <ul>
-            <li>instead just made sketches of all the models to scale</li>
-            <li>created color palette</li>
-            <li>dived into modeling without any further prior preparation</li>
-            <li>adjusted model as we tested them every single time in VR because seeing on screen and seeing in VR looked very different</li>
-          </ul>
-          <h3 class="my-3">So Far...</h3>
-          <ul>
-            <li>model of general room</li>
-            <li>model of tree</li>
-            <li>currently have a general room connected to other stations</li>
-            <li><a href="https://github.com/dali-lab/tarsier">Github Repository</a></li>
-          </ul>
-          <h3 class="my-3">Future</h3>
-          <ul>
-            <li>possible exhibition at VINS, Montshire</li>
-            <li>add in more stations</li>
-            <li>add in loading scene and tutorial</li>
-          </ul>
-          <h3 class="my-3">Tools</h3>
-          <ul>
-            <li>Product Management: Zenhub with Github, Slack
-            <li>Design: InVision, Maya</li>
-            <li>Developing: Unity, SteamVR, C# Scripting, and VRTK</li>
-          </ul>
-          <h3 class="my-3">Struggles and Lessons</h3>
-          <ul>
-            <li>communication is key and negotiation between partner</li>
-            <li>how do i make grayscales, highres mockups for virtual reality?</li>
-            <li>work pipeline for vr?? should model first? should design first? what should developers start developing?</li>
-            <li>always make a reservation for team lunches</li>
-          </ul>
-          <h3 class="my-3">Other Resources</h3>
-          <ul>
-            <li><a href="https://www.youtube.com/watch?v=3Z-S9A7QVgs">Jumping Tarsier Youtube</a></li>
+            <li><b>In the Shoes of the User</b></li>
+            <p>
+              What is the public opinion towards Virtual Reality? How can the Tarsier Goggles benefit the users? Who would use/need the project the most? I created fake user personas and thought about their situations of need. <br/>
+              <a href="http://app.userforge.com/personas/Qg3P8DpbKiNQh4o86">Eliza Nelson (museum lover)</a>, <a href="http://app.userforge.com/personas/nfwpEqC3jDZxSpnw4">Becky Barrett (high school student)</a>, <a href="http://app.userforge.com/personas/ihxLJxTitteJYLQEW">Ahmet Eksioglu (high school teacher)</a>
+            </p>
+            <li><b>Market & Inspiration Research</b></li>
+            <br/>
+            <a href="http://iteota.com/"><img class="img-fluid" src="iteota.png" style="height: 36vh;"alt="inspo1"></a>
+            <a href="http://www.alleyesonparis.com/index_en.html"><img class="img-fluid" src="paris.png" style="height: 36vh;"alt="inspo1"></a>
+            <br/><br/>
+            <p>
+              The topics of research were "VR in Education", "Animal Simulators", and "VR Environments." We searched currently existing projects, web applications, mobile applications, and games related to such topics.
+              The most similar project was done by ITEOTA (figure on the left). It was a large scale project that was location specific as it involved having the VR Headsets in the middle of the forest. It emphasized
+              the senses beyond sight, incorporating the sense of smell, touch as well as sound. The scientific accuracy of the animals' visions is questionable, however. It seems to be a more artistic representation of the idea.
+              <a href="https://projects.invisionapp.com/boards/9C3H89LTD3SZM/">More on InVision Board</a>
+            </p>
+            <br/>
+            <div class="key">
+              <a>Key Insights</a>
+              <ul>
+                <li><b>Low Accessibility of VR</b> counteracts the educational and inspirational purpose of the project.
+                  To overcome this, the team decided to aim for public displays of the project - either in an exhibit or even in class.
+                  Also, we foresaw that not many people would have had VR experience. We discussed the need for easy, intuitive controls as well as a tutorial.</li>
+                <li><b>Interactive Elements</b> enriches and adds credibility to the VR experience. A new challenge for us was to design interactive elements that were educational and thought-provoking without
+                  directly giving instructions to the users on what to do.</li>
+                <li><b>Rendering the Ambience</b> in a believable way is a challenge. There is a fine line between being realistic and tumbling into the uncanny valley.
+                  Rather than going for hyper-realism, it may be a better strategy to go for abstraction. Inspirations for the environment concept included low-poly models of forests and simple exhibition buildings.
+                </li>
+              </ul>
+            </div>
           </ul>
         </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Brainstorming</h3>
+          <p>
+            What would the exhibition be like? What will the stations inside the exhibition be like? What are some adjectives to describe such space?
+            <br/><br/>
+            One of the struggles for designing in VR was this - how would I create a mockup and a user flow diagram for VR? To address this problem, I used storyboards to sketch out the key scenes of the VR experience
+            instead of the pages that are layed out for mobile application mockups. Especially, animation storyboards came in handy.
+          </p>
+            <a href="brainstorm1.png"><img src="brainstorm1.png" style="width: 16vw;" /></a>
+            <a href="brainstorm3.png"><img src="brainstorm3.png" style="width: 16vw;"/></a>
+            <a href="sketch2.jpg"><img src="sketch2.jpg" style="width: 16vw;"/></a>
+            <a href="sketch1.jpg"><img src="sketch1.jpg" style="width: 16vw;"/></a>
+            <a href="sketch3.jpg"><img src="sketch3.jpg" style="width: 16vw;"/></a>
+          <br/>
+        </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Testing</h3>
+          <a href="UserTest.pdf">User Flow Paper Sketch for Testing</a>
+          <p>
+            Conducting user testing with a storyboard instead of high-resolution mockups was not easy.
+            Key scenes in a sequence did not represent the VR experience. And for some scenes, additional explanation about the intention
+            was needed that some bias was involved.
+          </p>
+          <div class="key">
+            <a>Feedback</a>
+            <ul>
+              <li>need background information on tarsiers: why tarsiers?</li>
+              <li>indication on whether the user's vision is on human or tarsier mode is unclear with the eyeballs icon</li>
+              <li>reading instructions may not be the best idea as it is hard to read in VR Goggles</li>
+              <li>station pillars should display what the inner environments are like</li>
+              <li>overall structure of an exhibition with several stations is intuitive and natural to the user flow</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Building While Sorting Out Priorities</h3>
+          <br/>
+          <b>Oh No! What Happened?</b>
+          <p>
+            10 weeks for launching a VR Exhibition on top of school work was a tough schedule even for a five members team.
+            As we aimed for a debut in the Technigala, we decided some features had to be modified or postponed for later development.
+            Thankfully, the project was selected to continue for another 10 weeks that we could pick the four most important features that defined the project.
+          </p>
+          <br/>
+          <div class="key">
+            <a>MVPs</a>
+            <ul>
+              <li><b>Tarsier Vision</b>: toggleable vision feature that flips changes between tarsier and human optics</li>
+              <li><b>Exhibition</b></li>
+              <li><b>Depth of Field Station</b></li>
+              <li><b>Brightness Compensation Station</b></li>
+              <li><b>Tarsier Forest</b></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Exhibition of the Exhibition</h3>
+          <br/>
+          <img src="technigala1.jpg" style="width: 16vw;"/>
+          <img src="technigala2.jpg" style="width: 16vw;"/>
+          <img src="technigala3.jpg" style="width: 16vw;"/>
+          <img src="technigala4.jpg" style="width: 16vw;"/>
+          <img src="technigala5.jpg" style="width: 16vw;"/>
+          <p>
+          <br/>
+          The team was excited to present the Tarsier Goggles at the 2018 Technigala. People from all different ages were interested in testing out the VR experience.
+          Staff members of the Vermont Institute of Natural Science, Professor Lorie Loeb, the Executive Director of the DALI Lab, several Dartmouth students, and even
+          two kindergarteners experienced Tarsier Goggles with great success. We live played the experience on a large screen so as to let other people see how
+          the tarsiers see the world.
+
+          <div class="key">
+            <a>Finalized Features</a>
+            <ul>
+              <li><b>Importance of Tutorials</b>: It was a struggle to teach the HTC Vive Controls to all the users every single time. Especially for children of young age.
+              We prepared a small illustration of the controls, but it was not enough. Perhaps an animated tutorial? Or an interactive tutorial may be more effective.</li>
+              <li><b>Focusing Problem</b>: We figured out a bug in the Tarsier's Vision. The focus was sometimes off and would not adjust automatically.</li>
+              <li><b>Awe and Excitement</b>: Depth of Field and the Tarsier's Forest were the most popular stations. The visual elements with colors, textures and light seemed to have
+              inspired many of the users.</li>
+              <li><a href="https://docs.google.com/document/d/1ulI-Shl8qNQKQgDI9KL4-xe2TAGxWPZc5-pLUUCQe14/edit">More Feedback</a></li>
+            </ul>
+          </div>
+        </p>
+        </div>
+
+        <div class="line"><hr/></div>
+        <br/>
+
+        <div class="content">
+          <h3>Future</h3>
+          <ul>
+            <li>I am excited to announce a possible <b>collaboration with the Vermont Institue of Natural Sciences</b>. The team is currently working on
+            customizing the VR experience to make it more fit for the exhibition. We are planning to add an Owl Vision feature as the owls are more local to Vermont.</li>
+            <li><b>Tutorials!</b> Ever since the User Research stage, the team has felt the importance of having an effective tutorial regarding how VR is not as accessible to the public as other mediums.
+              We wanted to make a proper, effective tutorial and for another next 10 weeks, it will be number one priority.
+            </li>
+            <li>The beauty of this project was the <b>flexible scalability</b>. We can add as much stations we want into the exhibition and we are definitely planning on doing so.</li>
+        </div>
+
+        <br/>
+        <img src="technigala.jpg" style="height: 70vh;"/>
+        <br/>
       </div>
 
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-      <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; ekyoon.me 2018</p>
-      </div>
-      <!-- /.container -->
+    <footer>
+      <a>Copyright &copy; ekyoon.me 2018</a>
+      <img src="../../footer1.png" alt="footer1" id="footer1"/>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
   </body>
 
 </html>
