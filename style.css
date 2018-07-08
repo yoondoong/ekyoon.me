@@ -25,16 +25,16 @@ body {
   visibility: hidden;
 }
 
-.row #code img{
+.row #project img{
   height: 12.5vw;
   margin-left: 5px;
 }
 
 .row #cod {
-  margin-top: -18px;
+  margin-top: -10px;
 }
 
-#design:hover {
+#snooze:hover {
   cursor: pointer;
 }
 
@@ -42,11 +42,11 @@ body {
   cursor: pointer;
 }
 
-#code:hover {
+#project:hover {
   cursor: pointer;
 }
 
-#design:hover + #des {
+#snooze:hover + #des {
   visibility: visible;
 }
 
@@ -54,7 +54,7 @@ body {
   visibility: visible;
 }
 
-#code:hover + #cod {
+#project:hover + #cod {
   visibility: visible;
 }
 
