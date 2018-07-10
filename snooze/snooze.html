@@ -11,9 +11,10 @@
     <title>Snooze Trio</title>
 
     <link href="../project/style.css" rel="stylesheet">
-
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script" rel="stylesheet">
+    <link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-minimal.css" />
+    <script src="http://github.hubspot.com/odometer/odometer.js"></script>
 
   </head>
 
@@ -40,11 +41,49 @@
       <!-- Page Heading -->
       <div class="heading">
       <img src="../img/snooze.png" alt="snooze" id="header"/>
-      <a>Snooze Trio: Creating My Own Character Brand</a>
+      <a id="title">SNOOZE TRIO</a>
+      <a>My Personal Character Branding Project</a>
+      <img src="./trio.jpeg" alt="Snooze Trio">
     </div>
 
-
     <!-- /.container -->
+    <div id="data">
+      <div id="data-left">
+        <div id="buttons">
+          <button onclick="reachf()" id="reach">Reach/Impressions</button>
+          <button onclick="like()" id="like">Average Likes</button>
+          <button onclick="follow()" id="fol">Followers</button>
+        </div>
+        <canvas id="weeklyChart" width="600"></canvas>
+        <canvas id="likeChart" width="600"></canvas>
+        <canvas id="followChart" width="600"></canvas>
+      </div>
+      <div id="data-right">
+        <div class="data-col">
+          <a>Followers</a>
+          <a class="odometer" id="followers"></a>
+        </div>
+        <div class="data-col">
+          <a>Likes</a>
+          <a class="odometer" id="likes"></a>
+        </div>
+        <div class="data-col">
+          <a>Posts</a>
+          <a class="odometer" id="posts"></a>
+        </div>
+      </div>
+    </div>
+
+    <div id="insta-container">
+      <div>TOP INSTA POSTS</div>
+      <div id="instagrams">
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bkp8s09AUau/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:320px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bkp8s09AUau/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Hello, it’s already #july 😳 이번엔 둘 다 이긴 둥이의 가위바위보... #뭔가진기분</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/snooze.trio/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> SNOOZE</a> (@snooze.trio) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-30T16:25:42+00:00">Jun 30, 2018 at 9:25am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BkXh82rAYRp/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:320px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BkXh82rAYRp/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">[ Trio Ep.1: #migos ] featuring #gucci and the #snooze #trio . 워킷랔아토킷워킷워킷랔아톸킷 호우!</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/snooze.trio/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> SNOOZE</a> (@snooze.trio) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-23T12:45:38+00:00">Jun 23, 2018 at 5:45am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+      <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Bjm8_usgK1u/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:320px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Bjm8_usgK1u/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">#snoozetrio made it to Rome!!!! #italy🇮🇹 #rome #graffiti</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/snooze.trio/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> SNOOZE</a> (@snooze.trio) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-06-04T15:59:10+00:00">Jun 4, 2018 at 8:59am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+    </div>
+    </div>
+
+  </div>
 
     <!-- Footer -->
     <footer>
@@ -52,9 +91,220 @@
       <img src="../img/footer1.png" alt="footer1" id="footer1"/>
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Google Sheets Data JSON with JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+    <script>
+    var wc = document.getElementById("weeklyChart");
+    var fc = document.getElementById("followChart");
+    var lc = document.getElementById("likeChart");
+    var reach = document.getElementById("reach");
+    var fol = document.getElementById("fol");
+    var lik = document.getElementById("like");
+
+    reach.style.fontWeight = "bold";
+    reach.style.textDecoration="underline";
+    wc.style.display = "block";
+    fc.style.display = "none";
+    lc.style.display = "none";
+
+    function reachf(){
+      wc.style.display = "block";
+      reach.style.fontWeight = "bold";
+      reach.style.textDecoration="underline";
+      lik.style.textDecoration="none";
+      fol.style.textDecoration="none";
+      fol.style.fontWeight = "normal";
+      lik.style.fontWeight = "normal";
+      fc.style.display = "none";
+      lc.style.display = "none";
+    }
+
+    function follow(){
+      wc.style.display = "none";
+      fc.style.display = "block";
+      reach.style.fontWeight = "normal";
+      fol.style.fontWeight = "bold";
+      fol.style.textDecoration="underline";
+      reach.style.textDecoration="none";
+      lik.style.textDecoration="none";
+      lik.style.fontWeight = "normal";
+      lc.style.display = "none";
+    }
+
+    function like(){
+      wc.style.display = "none";
+      fc.style.display = "none";
+      lc.style.display = "block";
+      lik.style.fontWeight = "bold";
+      lik.style.textDecoration="underline";
+      reach.style.textDecoration="none";
+      fol.style.textDecoration="none";
+      fol.style.fontWeight = "normal";
+      reach.style.fontWeight = "normal";
+    }
+
+    </script>
+    <script>
+    $(function(){
+      var weekUrl = 'https://spreadsheets.google.com/feeds/cells/1g4FBktkm7al3ZkDI8LuFXuztTqK4nY-eUYMLep6BRuw/1/public/full?alt=json';
+      var postUrl = 'https://spreadsheets.google.com/feeds/cells/1g4FBktkm7al3ZkDI8LuFXuztTqK4nY-eUYMLep6BRuw/2/public/full?alt=json';
+      var followUrl = 'https://spreadsheets.google.com/feeds/cells/1g4FBktkm7al3ZkDI8LuFXuztTqK4nY-eUYMLep6BRuw/3/public/full?alt=json';
+
+      $.getJSON(weekUrl, function(data){
+        var entry = data.feed.entry;
+        var weeks = [];
+        var reach = [];
+        var imp = [];
+        var avg = [];
+
+        for ( var i = 3; i < entry.length; i += 4){
+          weeks.push(entry[i].content.$t);
+          reach.push(entry[i+1].content.$t);
+          imp.push(entry[i+2].content.$t);
+          avg.push(entry[i+3].content.$t);
+        }
+
+        Chart.defaults.global.defaultFontFamily = 'Nanum Pen Script';
+        Chart.defaults.global.defaultFontSize = 22;
+
+        var ctx = document.getElementById("weeklyChart").getContext('2d');
+        var ctx2 = document.getElementById("likeChart").getContext('2d');
+
+        var weeklyChart = new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: weeks,
+              datasets: [{
+                  label: 'Reach',
+                  fill: false,
+                  data: reach,
+                  borderColor: '#F3A68E',
+                  borderWidth: 3,
+                  backgroundColor: '#F3A68E',
+                  borderDash: [10,5],
+              },{
+                label: 'Impressions',
+                fill: false,
+                data: imp,
+                borderColor: '#698C01',
+                borderWidth: 3,
+                backgroundColor: '#698C01',
+                borderDash: [10,5],
+              }
+            ]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              },
+              legend: {
+                position: 'bottom',
+                labels:{
+                  boxWidth: 15,
+                  fontSize: 15,
+                },
+              },
+          }
+      });
+
+        var likeChart = new Chart(ctx2, {
+          type: 'line',
+          data: {
+              labels: weeks,
+              datasets: [{
+                label: 'Average Likes',
+                fill: false,
+                data: avg,
+                borderColor: '#B74832',
+                backgroundColor: '#B74832',
+                borderDash: [10,5],
+                borderWidth: 3
+              }]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              },
+              legend: {
+                position: 'bottom',
+                labels:{
+                  boxWidth: 15,
+                  fontSize: 15,
+                },
+              },
+          }
+      });
+
+      $.getJSON(followUrl, function(data){
+        var entry = data.feed.entry;
+        var dates = [];
+        var follows = [];
+        var recent;
+
+        for ( var i = 2; i < entry.length; i += 2){
+          dates.push(entry[i].content.$t);
+          follows.push(entry[i+1].content.$t);
+          recent = entry[i+1].content.$t;
+        }
+        document.getElementById("followers").innerHTML = recent;
+        var ctx1 = document.getElementById("followChart").getContext('2d');
+        var followChart = new Chart(ctx1, {
+          type: 'line',
+          data: {
+              labels: dates,
+              datasets: [{
+                label: 'Followers',
+                fill: false,
+                data: follows,
+                borderColor: '#b4922a',
+                backgroundColor: '#b4922a',
+                borderWidth: 3,
+                borderDash: [10,5],
+              }
+            ]
+          },
+          options: {
+              scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero:true
+                      }
+                  }]
+              },
+              responsive: false,
+              legend: {
+                position: 'bottom',
+                labels:{
+                  boxWidth: 15,
+                  fontSize: 15,
+                },
+              },
+          }
+      });
+      })
+
+    $.getJSON(postUrl, function(data){
+      var entry = data.feed.entry;
+      var likes = 0;
+
+      for ( var i = 3; i < entry.length; i += 2){
+        likes += parseInt(entry[i].content.$t);
+      }
+      document.getElementById("likes").innerHTML = likes;
+      document.getElementById("posts").innerHTML = (entry.length-2)/2;
+    })
+    });
+  });
+    </script>
 
   </body>
 

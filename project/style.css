@@ -86,11 +86,17 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   font-family: 'Nanum Pen Script', cursive;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.heading #title {
   font-size: 35px;
 }
 
-.heading a {
-  margin-bottom: 60px;
+.heading img {
+  width: 100vw;
+  margin-top: 70px;
 }
 
 .container {
@@ -168,4 +174,73 @@ footer img{
   margin-left: 15px;
   margin-bottom: 20px;
   height: 50px;
+}
+
+#data {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-family: 'Nanum Pen Script', cursive;
+}
+
+#data button {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 25px;
+  border: none;
+  color: #666666;
+  margin: 5px;
+}
+
+#data button:hover {
+  cursor: pointer;
+}
+
+#data-left {
+  margin: 10px;
+}
+
+#buttons {
+  margin-bottom: 10px;
+}
+
+#data-right {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+  margin: 10px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+#followers, #likes, #posts {
+  font-size: 90px;
+  align-self: center;
+}
+
+.data-col {
+  width: 22vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#insta-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  width: 80vw;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 30px;
+}
+
+#instagrams {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
